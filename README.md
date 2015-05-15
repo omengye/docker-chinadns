@@ -5,9 +5,10 @@ This Dockerfile builds an image with https://github.com/clowwindy/ChinaDNS.
 
 Quick Start
 -----------
+    docker build -t chinadns .
 
-    docker run -p 53:53/udp -d -t yaleh/docker-chinadns
-
+    docker run -p 53:53/udp -t -i chinadns
+    
 Ports to map
 
 * **53/udp**: DNS
